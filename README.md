@@ -1,3 +1,7 @@
 # Деплой приложения на сервер с использованием pm2
 
-Стартеркит проекта по автоматизации деплоя фронтенда и бэкенда при помощи pm2 (pm2 deploy)
+## Ссылки
+
+- IP adress 51.250.77.24
+- [Frontend](https://shnatalee.students.nomoredomains.icu)
+- [Backend](https://api.shnatalee.students.nomoredomains.icu)
