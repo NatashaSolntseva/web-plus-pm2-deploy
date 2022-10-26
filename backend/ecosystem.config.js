@@ -21,11 +21,11 @@ module.exports = {
   deploy: {
     production: {
       user: DEPLOY_USER,
-      ssh_options: 'StrictHostKeyChecking=no',
       host: DEPLOY_HOST,
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
       path: DEPLOY_PATH,
+      ssh_options: 'StrictHostKeyChecking=no',
       'pre-deploy': `scp .env env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
       'post-deploy': 'cd backend && npm i && npm run build',
     },
