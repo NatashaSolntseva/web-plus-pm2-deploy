@@ -7,6 +7,7 @@ const {
   DEPLOY_HOST,
   DEPLOY_REF,
   DEPLOY_REPO,
+  DEPLOY_PATH,
 } = process.env;
 
 module.exports = {
@@ -24,7 +25,8 @@ module.exports = {
       ssh_options: "StrictHostKeyChecking=no",
       ref: DEPLOY_REF,
       repo: DEPLOY_REPO,
-      'post-deploy': 'cd frontend && npm i && npm rub build',
+      path: DEPLOY_PATH,
+      'post-deploy': 'cd frontend && npm i && npm run build',
     },
   },
 };
