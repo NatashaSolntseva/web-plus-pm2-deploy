@@ -139,6 +139,6 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://api.natsolntseva.students.nomoredomains.icu');
+  const api = new Api('https://api.natsolntseva.students.nomoredomains.icu');
 
   export default api;
